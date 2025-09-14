@@ -23,7 +23,6 @@ int main()
         block.Draw();
         
         EndDrawing();
-        /* code */
     }
     
 
