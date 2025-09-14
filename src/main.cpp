@@ -28,6 +28,7 @@ int main()
 
 
     while (WindowShouldClose() == false) {
+        UpdateMusicStream(game.music);
         game.HandleInput();
         if (EventTriggered(0.2)) { //every 2 seconds, blocks move down (falling) -> decrease to speed up game (difficulty)
             game.MoveBlockDown();
@@ -46,7 +47,7 @@ int main()
 
         //Score (actual numbered score)
         char scoreText[10];
-        snprintf(scoreText, sizeof(scoreText), "%d", game.score);
+        sprintf(scoreText, "%d", game.score);
         Vector2 textSize = MeasureTextEx(font, scoreText, 38, 2);
         DrawTextEx(font, scoreText, {320 + (160 - textSize.x)/2, 65}, 38, 2, WHITE);
 
