@@ -21,10 +21,10 @@ While the core gameplay is inspired by a [tutorial](https://www.youtube.com/watc
 ## 🎨 Features  
 
 - Classic falling block gameplay with scoring.  
-- **Hard Drop (Space)** and **Hold Block (S key)** mechanics.  
 - Background music and sound effects for rotations and line clears.  
 - Real-time user input for smooth movement and rotation.  
-- UI includes next block preview and score display.  
+- UI includes next block preview and score display.
+- Points scored by clearing different amounts of layers & survival time.
 
 ---
 
@@ -32,12 +32,12 @@ While the core gameplay is inspired by a [tutorial](https://www.youtube.com/watc
 
 | Action            | Key             |  
 |-------------------|-----------------|  
+| Launch Tetris     | F5 (anywhere)   |  
 | Move Left         | ← (Left Arrow)  |  
 | Move Right        | → (Right Arrow) |  
 | Soft Drop         | ↓ (Down Arrow)  |  
-| Hard Drop         | Spacebar        |  
 | Rotate 90°        | ↑ (Up Arrow)    |  
-| Hold / Save Block | S key           |  
+| Reset Game        | 0 key           |  
 
 ---
 
@@ -102,4 +102,4 @@ g++ src/*.cpp -o tetris -std=c++17 -lraylib -framework OpenGL -framework Cocoa -
 ## 🛡️ Credits  
 
 - Tutorial inspiration by **Programming With Nick** (although many project features were adapted from the tutorial, all code was written by myself and extra functionality was included).  
-- Sounds and Music created by [**Spyros**](https://assetstore.unity.com/packages/audio/music/black-swan-vs-white-swan-audio-pack-219984).  
+- Royalty Free Sounds and Music created by [**Spyros**](https://assetstore.unity.com/packages/audio/music/black-swan-vs-white-swan-audio-pack-219984).  
