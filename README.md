@@ -4,7 +4,7 @@
 
 Tetris is a classic game and one of the earliest games I played while growing up. This project reflects both my passion for the game and my interest in applying **Object-Oriented Programming (OOP)** concepts in **C++**.  
 
-While the core gameplay is inspired by a tutorial, I wrote every line of code myself and added extra functionality like **hard drop** and **hold block** mechanics to make it a more complete Tetris experience.  
+While the core gameplay is inspired by a [tutorial](https://www.youtube.com/watch?v=wVYKG_ch4yM), I wrote every line of code myself and added extra functionality. Load up the project and click F5 on any page to start playing!  
 
 ---
 
@@ -102,4 +102,4 @@ g++ src/*.cpp -o tetris -std=c++17 -lraylib -framework OpenGL -framework Cocoa -
 ## 🛡️ Credits  
 
 - Tutorial inspiration by **Programming With Nick** (although many project features were adapted from the tutorial, all code was written by myself and extra functionality was included).  
-- Sounds and Music created by **Spyros**.  
+- Sounds and Music created by [**Spyros**](https://assetstore.unity.com/packages/audio/music/black-swan-vs-white-swan-audio-pack-219984).  
