@@ -46,7 +46,7 @@ int main()
 
         //Score (actual numbered score)
         char scoreText[10];
-        sprintf(scoreText, "%d", game.score);
+        snprintf(scoreText, sizeof(scoreText), "%d", game.score);
         Vector2 textSize = MeasureTextEx(font, scoreText, 38, 2);
         DrawTextEx(font, scoreText, {320 + (160 - textSize.x)/2, 65}, 38, 2, WHITE);
 
