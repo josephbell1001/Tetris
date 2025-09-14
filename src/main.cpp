@@ -2,7 +2,7 @@
 #include "grid.h"
 #include "blocks.cpp"
 
-int main() 
+int main()
 {
     Color darkBlue = {44, 44, 127, 255};
     InitWindow(300, 600, "raylib Tetris");
