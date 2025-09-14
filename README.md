@@ -1,29 +1,98 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+#Tetris Remake
+##🎮 Introduction
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+Tetris is a classic game that, and one of the earliest games that I played while growing up. This project reflects both my passion for the game and my interest in applying Object-Oriented Programming (OOP) concepts in C++.
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
+##📝 Project Highlights
 
-# Video Tutorial
+- Encapsulation & OOP — Thoughtfully scoped fields and methods to demonstrate encapsulation.
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+- Performance-aware Design — Leveraged stack and heap memory effectively to reduce runtime.
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+- Real-time Input Management — Translated keypresses to block movements with minimal latency.
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+- Core Algorithms — Implemented board generation, collision detection, next-block preview, and save-block mechanics.
+
+- Raylib Integration — Used Raylib to create a UI, handle tick-rate, play music, and add sound effects.
+
+##🎨 Features
+
+Classic falling block gameplay with scoring.
+
+Hard Drop (space) and Hold Block (S key) mechanics.
+
+Background music and sound effects for rotations and line clears.
+
+Real-time user input for smooth movement and rotation.
+
+UI includes next block preview and score display.
+
+##🎮 Controls
+Action	Key
+Move Left	← (Left Arrow)
+Move Right	→ (Right Arrow)
+Soft Drop	↓ (Down Arrow)
+Hard Drop	Spacebar
+Rotate 90°	↑ (Up Arrow)
+Hold / Save Block	S key
+🛠️ How to Load & Run
+
+Download or Clone the Project:
+
+git clone https://github.com/yourusername/tetris-remake.git
+
+
+Or download as a .zip and extract.
+
+Install Raylib:
+
+macOS: brew install raylib
+
+Linux: sudo apt install libraylib-dev
+
+Windows: build from source or use precompiled binaries.
+
+Open the Project:
+
+Open the main.code-workspace file in VS Code.
+
+Run the Game:
+
+Press F5 in any .cpp file or build with:
+
+g++ src/*.cpp -o tetris -std=c++17 -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework OpenAL
+./tetris
+
+📂 Project Structure
+.
+├── assets/
+│   ├── Font/monogram.ttf
+│   └── Sounds/
+│       ├── music.mp3
+│       ├── rotate.mp3
+│       └── clear.mp3
+├── src/
+│   ├── main.cpp
+│   ├── game.cpp
+│   ├── game.h
+│   ├── grid.cpp
+│   ├── grid.h
+│   ├── block.cpp
+│   ├── block.h
+│   ├── blocks.cpp
+│   └── blocks.h
+└── README.md
+
+💡 Future Improvements
+
+Add customizable skins and block colors.
+
+Implement multiplayer or online leaderboards.
+
+Add different speed levels and difficulty progression.
+
+🛡️ Credits
+
+- Tutorial inspiration by Programming With Nick (although many project features were adapted from tutorial, all code was written by myself and excess functinality was included)
+
+- Sounds and Music created by Spyros
