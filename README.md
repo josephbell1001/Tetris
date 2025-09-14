@@ -1,69 +1,74 @@
-#Tetris Remake
-##🎮 Introduction
+# Tetris Remake  
 
-Tetris is a classic game that, and one of the earliest games that I played while growing up. This project reflects both my passion for the game and my interest in applying Object-Oriented Programming (OOP) concepts in C++.
+## 🎮 Introduction  
 
-##📝 Project Highlights
+Tetris is a classic game and one of the earliest games I played while growing up. This project reflects both my passion for the game and my interest in applying **Object-Oriented Programming (OOP)** concepts in **C++**.  
 
-- Encapsulation & OOP — Thoughtfully scoped fields and methods to demonstrate encapsulation.
+While the core gameplay is inspired by a tutorial, I wrote every line of code myself and added extra functionality like **hard drop** and **hold block** mechanics to make it a more complete Tetris experience.  
 
-- Performance-aware Design — Leveraged stack and heap memory effectively to reduce runtime.
+---
 
-- Real-time Input Management — Translated keypresses to block movements with minimal latency.
+## 📝 Project Highlights  
 
-- Core Algorithms — Implemented board generation, collision detection, next-block preview, and save-block mechanics.
+- **Encapsulation & OOP** — Thoughtfully scoped fields and methods to demonstrate encapsulation.  
+- **Performance-aware Design** — Leveraged stack and heap memory effectively to reduce runtime.  
+- **Real-time Input Management** — Translated keypresses to block movements with minimal latency.  
+- **Core Algorithms** — Implemented board generation, collision detection, next-block preview, and save-block mechanics.  
+- **Raylib Integration** — Used Raylib to create a UI, handle tick-rate, play music, and add sound effects.  
 
-- Raylib Integration — Used Raylib to create a UI, handle tick-rate, play music, and add sound effects.
+---
 
-##🎨 Features
+## 🎨 Features  
 
-Classic falling block gameplay with scoring.
+- Classic falling block gameplay with scoring.  
+- **Hard Drop (Space)** and **Hold Block (S key)** mechanics.  
+- Background music and sound effects for rotations and line clears.  
+- Real-time user input for smooth movement and rotation.  
+- UI includes next block preview and score display.  
 
-Hard Drop (space) and Hold Block (S key) mechanics.
+---
 
-Background music and sound effects for rotations and line clears.
+## 🎮 Controls  
 
-Real-time user input for smooth movement and rotation.
+| Action            | Key             |  
+|-------------------|-----------------|  
+| Move Left         | ← (Left Arrow)  |  
+| Move Right        | → (Right Arrow) |  
+| Soft Drop         | ↓ (Down Arrow)  |  
+| Hard Drop         | Spacebar        |  
+| Rotate 90°        | ↑ (Up Arrow)    |  
+| Hold / Save Block | S key           |  
 
-UI includes next block preview and score display.
+---
 
-##🎮 Controls
-Action	Key
-Move Left	← (Left Arrow)
-Move Right	→ (Right Arrow)
-Soft Drop	↓ (Down Arrow)
-Hard Drop	Spacebar
-Rotate 90°	↑ (Up Arrow)
-Hold / Save Block	S key
-🛠️ How to Load & Run
+## 🛠️ How to Load & Run  
 
-Download or Clone the Project:
-
+**Download or Clone the Project:**  
+```bash
 git clone https://github.com/yourusername/tetris-remake.git
+```
+Or download as a `.zip` and extract.
 
+**Install Raylib:**  
+- **macOS:** `brew install raylib`  
+- **Linux:** `sudo apt install libraylib-dev`  
+- **Windows:** build from source or use precompiled binaries.  
 
-Or download as a .zip and extract.
+**Open the Project:**  
+Open the `main.code-workspace` file in VS Code.  
 
-Install Raylib:
-
-macOS: brew install raylib
-
-Linux: sudo apt install libraylib-dev
-
-Windows: build from source or use precompiled binaries.
-
-Open the Project:
-
-Open the main.code-workspace file in VS Code.
-
-Run the Game:
-
-Press F5 in any .cpp file or build with:
-
+**Run the Game:**  
+Press **F5** in any `.cpp` file or build with:  
+```bash
 g++ src/*.cpp -o tetris -std=c++17 -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework OpenAL
 ./tetris
+```  
 
-📂 Project Structure
+---
+
+## 📂 Project Structure  
+
+```
 .
 ├── assets/
 │   ├── Font/monogram.ttf
@@ -82,17 +87,19 @@ g++ src/*.cpp -o tetris -std=c++17 -lraylib -framework OpenGL -framework Cocoa -
 │   ├── blocks.cpp
 │   └── blocks.h
 └── README.md
+```
 
-💡 Future Improvements
+---
 
-Add customizable skins and block colors.
+## 💡 Future Improvements  
 
-Implement multiplayer or online leaderboards.
+- Add customizable skins and block colors.  
+- Implement multiplayer or online leaderboards.  
+- Add different speed levels and difficulty progression.  
 
-Add different speed levels and difficulty progression.
+---
 
-🛡️ Credits
+## 🛡️ Credits  
 
-- Tutorial inspiration by Programming With Nick (although many project features were adapted from tutorial, all code was written by myself and excess functinality was included)
-
-- Sounds and Music created by Spyros
+- Tutorial inspiration by **Programming With Nick** (although many project features were adapted from the tutorial, all code was written by myself and extra functionality was included).  
+- Sounds and Music created by **Spyros**.  
